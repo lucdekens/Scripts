@@ -1,0 +1,161 @@
+{
+"Lab": [
+    {
+        "LabName":  "Yggdrasil",
+        "LabDescription":  "vEng Test Environment",
+        "Force":  "true"
+    }
+],
+"Iso": [
+    {
+        "Label":  "W2K12R2",
+        "Filename":  "en_windows_server_2012_r2_x64_dvd_2707946.iso",
+        "Path":  "R:\\Homelab\\MSDN\\W2K12R2U1"
+    },
+    {
+        "Label":  "W10",
+        "Filename":  "en_windows_10_enterprise_version_1511_x64_dvd_7224901.iso",
+        "Path":  "R:\\Homelab\\MSDN\\W10"
+    },
+    {
+        "Label":  "VCSA",
+        "Filename":  "VMware-VCSA-all-6.0.0-3343019.iso",
+        "Path":  "R:\\Homelab\\VMware\\6.0\\vCenter"
+    },
+    {
+        "Label":  "ESXi",
+        "Filename":  "VMware-VMvisor-Installer-201601001-3380124.x86_64.iso",
+        "Path":  "R:\\Homelab\\VMware\\6.0\\ESXi"
+    }
+],
+"VM": [
+    {
+        "LabName":  "Yggdrasil",
+        "VmName":  "DC1",
+        "VmDescription":  "Domain Controller",
+        "Image":  "Empty",
+        "ISO":  "W2K12R2",
+        "NumCpu":  "",
+        "MemorySize":  "",
+        "MemoryUnit":  "",
+        "HD": [
+          {
+            "HDSize": "50",
+            "HDUnit":  "GB"
+          }
+        ],
+        "Hostname":  "",
+        "RDP":  "true",
+        "SSH":  "false",
+        "Order":  "1",
+        "OrderDelay":  "300"
+    },
+    {
+        "LabName":  "Yggdrasil",
+        "VmName":  "vCenter",
+        "VmDescription":  "vSphere vCenter (VCSA)",
+        "Image":  "Empty",
+        "ISO":  "VCSA",
+        "NumCpu":  "4",
+        "MemorySize":  "8",
+        "MemoryUnit":  "GB",
+        "HD": [],
+        "Hostname":  "",
+        "RDP":  "true",
+        "SSH":  "false",
+        "Order":  "2",
+        "OrderDelay":  "300"
+    },
+    {
+        "LabName":  "Yggdrasil",
+        "VmName":  "ESX1",
+        "VmDescription":  "ESXi 1",
+        "Image":  "Empty ESX",
+        "ISO":  "ESXi",
+        "NumCpu":  "4",
+        "MemorySize":  "8",
+        "MemoryUnit":  "GB",
+        "HD":  [],
+        "Hostname":  "ESX1",
+        "RDP":  "false",
+        "SSH":  "true",
+        "Order":  "1",
+        "OrderDelay":  "300"
+    },
+    {
+        "LabName":  "Yggdrasil",
+        "VmName":  "ESX2",
+        "VmDescription":  "ESXi 2",
+        "Image":  "Empty ESX",
+        "ISO":  "ESXi",
+        "NumCpu":  "4",
+        "MemorySize":  "8",
+        "MemoryUnit":  "GB",
+        "HD":  [],
+        "Hostname":  "ESX2",
+        "RDP":  "false",
+        "SSH":  "true",
+        "Order":  "1",
+        "OrderDelay":  "300"
+    },
+    {
+        "LabName":  "Yggdrasil",
+        "VmName":  "WS1",
+        "VmDescription":  "Workstation",
+        "Image":  "Empty",
+        "ISO":  "W10",
+        "NumCpu":  "",
+        "MemorySize":  "",
+        "MemoryUnit":  "",
+        "HD": [
+          {
+            "HDSize": "25",
+            "HDUnit":  "GB"
+          },
+          {
+            "HDSize": "25",
+            "HDUnit":  "GB"
+          }
+        ],
+        "Hostname":  "",
+        "RDP":  "true",
+        "SSH":  "false",
+        "Order":  "2",
+        "OrderDelay":  "300"
+    },
+    {
+        "LabName":  "Yggdrasil",
+        "VmName":  "Pull",
+        "VmDescription":  "DSC Pull Server",
+        "Image":  "Empty",
+        "ISO":  "W2K12R2",
+        "NumCpu":  "",
+        "MemorySize":  "",
+        "MemoryUnit":  "",
+        "HD2":  "",
+        "HD2Unit":  "",
+        "Hostname":  "",
+        "RDP":  "true",
+        "SSH":  "false",
+        "Order":  "3",
+        "OrderDelay":  "0"
+    },
+    {
+        "LabName":  "Yggdrasil",
+        "VmName":  "vEng",
+        "VmDescription":  "The vSphere Engine",
+        "Image":  "Empty",
+        "ISO":  "W2K12R2",
+        "NumCpu":  "",
+        "MemorySize":  "",
+        "MemoryUnit":  "",
+        "HD2":  "",
+        "HD2Unit":  "",
+        "Hostname":  "",
+        "RDP":  "true",
+        "SSH":  "false",
+        "Order":  "3",
+        "OrderDelay":  "0"
+    }
+]
+}
