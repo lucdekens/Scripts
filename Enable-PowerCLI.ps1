@@ -1,11 +1,14 @@
 ﻿function Enable-PowerCLI{
 <#
-.SYNOPSIS  Load PowerCLI modules and PSSnapins
-.DESCRIPTION This function will load all requested PowerCLI
+.SYNOPSIS
+  Load PowerCLI modules and PSSnapins
+.DESCRIPTION
+  This function will load all requested PowerCLI
   modules and PSSnapins.
   The function will, depending on the installed PowerCLI version,
   determine what needs to be loaded.
-.NOTES  Author:  Luc Dekens
+.NOTES
+  Author:  Luc Dekens
 .PARAMETER Cloud
   Switch to indicate if the Cloud related cmdlets shall be loaded
 .PARAMETER InitScript
