@@ -1,4 +1,19 @@
-﻿function Enable-PowerCLI{
+﻿<#PSScriptInfo
+.DESCRIPTION 
+    Autoloader script for VMware PowerCLI
+.VERSION 
+    1.0.0
+.GUID 
+    47bef1e2-4587-449b-a336-64c42979c9cc
+.AUTHOR 
+    Luc Dekens @LucD22
+.TAGS 
+    VMware PowerCLI
+.PROJECTURI
+    https://github.com/lucdekens/Scripts/blob/master/Enable-PowerCLI.ps1
+#>
+
+Function Enable-PowerCLI{
 <#
 .SYNOPSIS
   Load PowerCLI modules and PSSnapins
